@@ -2,63 +2,134 @@
   1. Use a more-intuitive box-sizing model.
 */
 *, *::before, *::after {
-    box-sizing: border-box;
-  }
-  /*
-    2. Remove default margin
-  */
-  * {
-    margin: 0;
-  }
-  /*
-    Typographic tweaks!
-    3. Add accessible line-height
-    4. Improve text rendering
-  */
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-  }
-  /*
-    5. Improve media defaults
-  */
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
-  /*
-    6. Remove built-in form typography styles
-  */
-  input, button, textarea, select {
-    font: inherit;
-  }
-  /*
-    7. Avoid text overflows
-  */
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
 
-  :root {
-    /* Primary Colors */
-    --clr-primary-100: hsl(0, 100%, 67%);
-    --clr-primary-200: hsl(39, 100%, 56%);
-    --clr-primary-300: hsl(166, 100%, 37%);
-    --clr-primary-400: hsl(234, 85%, 45%);
+:root {
+  /* Primary Colors */
+  --clr-primary-100: hsl(0, 100%, 67%);
+  --clr-primary-200: hsl(39, 100%, 56%);
+  --clr-primary-300: hsl(166, 100%, 37%);
+  --clr-primary-400: hsl(234, 85%, 45%);
 
-    /* Gradients Colors */
-    --clr-secondary-bg-200: hsl(252, 100%, 67%);
-    --clr-secondary-bg-400: hsl(241, 81%, 54%);
-    --clr-secondary-cr-200: hsla(256, 72%, 46%, 1);
-    --clr-secondary-cr-400: hsla(241, 72%, 46%, 0);
+  /* Gradients Colors */
+  --clr-secondary-bg-200: hsl(252, 100%, 67%);
+  --clr-secondary-bg-400: hsl(241, 81%, 54%);
+  --clr-secondary-cr-200: hsla(256, 72%, 46%, 1);
+  --clr-secondary-cr-400: hsla(241, 72%, 46%, 0);
 
-    /* Neutral Colors */
-    --clr-white: hsl(0, 0%, 100%);
-    --clr-blue: hsl(221, 100%, 96%);
-    --clr-lavender: hsl(241, 100%, 89%);
-    --clr-gray: hsl(224, 30%, 27%);
+  /* Neutral Colors */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-blue: hsl(221, 100%, 96%);
+  --clr-lavender: hsl(241, 100%, 89%);
+  --clr-gray: hsl(224, 30%, 27%);
 
 
-    /* Fonts */
-    --font-hanken: 'Hanken Grotesk', sans-serif;
-  }
+  /* Fonts */
+  --font-hanken: 'Hanken Grotesk', sans-serif;
+  --font-size: 18px;
+}
+.summary {
+  color: black;
+}
+.summary__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+.summary__markdown {
+  font-weight: bold;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.project__main {
+  max-width: 600px;
+  font-family: var(--font-hanken);
+  color: var(--clr-white);
+}
+.project__main .your__result {
+  background: linear-gradient(360deg, hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+  border-radius: 0 0 1.65rem 1.65rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.project__main .your__result .result__circle {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 6.4rem;
+  height: 6.4rem;
+  /* padding: 15px; */
+  border-radius: 100%; 
+  background: linear-gradient(180deg, hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+.result__title {
+  color: var(--clr-lavender);
+  font-size: 0.875rem;
+}
+.project__main .your__result .result__circle .result__range {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: normal;
+}
+.project__main .your__result .result__circle .result__range_small {
+  font-size: 0.8rem;
+  color: var(--clr-lavender);
+}
+.result__great {
+  font-size: 1.3rem;
+  line-height: normal;
+}
+.result__paragraph {
+  font-size: 0.8rem;
+  color: var(--clr-lavender);
+}

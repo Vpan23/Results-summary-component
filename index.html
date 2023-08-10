@@ -10,6 +10,7 @@
 
   <!-- Imported Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   
@@ -17,29 +18,41 @@
 
 </head>
 <body>
+  <main>
+    <div class="project__main">
+      <div class="your__result">
+        <h1 class="result__title">Your Result</h1>
+        <div class="result__circle"><p class="result__range">76</p><p class="result__range_small">of 100</p></div>
+        <h2 class="result__great">Great</h2>
+        <p class="result__paragraph">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
 
-  Your Result
-  76
-  of 100
+      <!-- Summary Content -->
+      <div class="summary">
+        <div class="summary__title">
+          Summary
+        </div>
+        
+        <div class="summary__section">
+          <div class="summary__assets">
+          <img src="./assets/images/icon-reaction.svg" alt="reaction-icon">
+          Reaction</div>
+          <p><span class="summary_markdown">80</span> / 100</p>
+        </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+        <p>Memory
+          <span class="summary_markdown">92</span> / 100</p>
 
-  Reaction
-  80 / 100
+        <p>Verbal
+          <span class="summary_markdown">61</span> / 100</p>
+          
+        <p>Visual
+          <span class="summary_markdown">72</span> / 100</p>
+      </div>
 
-  Memory
-  92 / 100
-
-  Verbal
-  61 / 100
-
-  Visual
-  72 / 100
-
-  Continue
+      <button class="button">Continue</button>
+    </div>
+  </main>
   
 </body>
 </html>
